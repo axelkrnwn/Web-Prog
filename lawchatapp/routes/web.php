@@ -1,38 +1,20 @@
 <?php
 
-use Illuminate\Support\Facades\Request;
+use App\Http\Controllers\ChatController;
+use App\Http\Controllers\ChatRoomController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
-//landing page
 Route::get('/', function () {
-    return view('welcome');
+    return view('home.landing');
 });
-
-//login page
 Route::get('/login', function () {
-    return view('welcome');
+    return view('auth.login');
 });
-
-Route::post('/login', function (Request $request) {
-    return view('welcome');
-});
-
-//register page
 Route::get('/register', function () {
-    return view('welcome');
+    return view('auth.register');
 });
-
-Route::post('/register', function (Request $request) {
-    return view('welcome');
-});
-
-//chat page
-Route::get('/chat/{id?}', function (string $id="") {
-    echo "hai, '".$id."'";
-    return view('welcome');
-});
-
-Route::post('/chat/{id?}', function (string $id="", Request $request) {
-    echo "hai, '".$id."'";
-    return view('welcome');
-});
+Route::post('/login', [UserController::class, 'login']);
+Route::post('/register', [UserController::class, 'register']);
+Route::get('/chat/{id?}', [ChatRoomController::class, 'index']);
+Route::post('/chat/{id?}', [ChatController::class, 'add']);
