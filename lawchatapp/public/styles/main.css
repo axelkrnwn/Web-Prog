@@ -30,6 +30,20 @@
     font-weight: 400;
 }
 
+.user-chat, .bot-chat{
+    background-color: #CBB9B9;
+    width: 45%;
+    color: white;
+}
+
+.user-chat{
+    border-radius: 15px 0 15px 15px;
+}
+
+.bot-chat{
+    border-radius: 15px 15px 15px 0;
+}
+
 .prompt{
     background-color: #CBB9B9;
     border-radius: 5px;
@@ -50,4 +64,16 @@
 
 input:focus{
     outline: none;
+}
+
+@media screen and (max-width: 768px) {
+
+    .title{
+        display: none;
+    }
+
+    ::placeholder{
+        opacity: 0;
+        display: none;
+    }
 }
