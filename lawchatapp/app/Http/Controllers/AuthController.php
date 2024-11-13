@@ -7,9 +7,8 @@ use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
-use Laravel\Socialite\Facades\Socialite;
 
-class UserController extends Controller
+class AuthController extends Controller
 {
     public function showRegisterForm()
     {
@@ -63,47 +62,5 @@ class UserController extends Controller
     {
         Auth::logout();
         return redirect()->route('login')->with('success', 'Logged out successfully');
-    }
-
-    public function redirectToGoogle()
-    {
-        return Socialite::driver('google')->redirect();
-    }
-
-    public function handleGoogleCallback()
-    {
-        $googleUser = Socialite::driver('google')->user();
-
-        $user = User::firstOrCreate([
-            'email' => $googleUser->getEmail(),
-        ], [
-            'name' => $googleUser->getName(),
-            'password' => Hash::make(uniqid()),
-        ]);
-
-        Auth::login($user);
-
-        return redirect()->route('home')->with('success', 'Logged in successfully with Google');
-    }
-
-    public function redirectToFacebook()
-    {
-        return Socialite::driver('facebook')->redirect();
-    }
-
-    public function handleFacebookCallback()
-    {
-        $facebookUser = Socialite::driver('facebook')->user();
-
-        $user = User::firstOrCreate([
-            'email' => $facebookUser->getEmail(),
-        ], [
-            'name' => $facebookUser->getName(),
-            'password' => Hash::make(uniqid()), 
-        ]);
-
-        Auth::login($user);
-
-        return redirect()->route('home')->with('success', 'Logged in successfully with Facebook');
     }
 }
