@@ -17,6 +17,10 @@
                 <div class="rectangle"><span></span></div>
             </div>
             <h1 class="title">HukumKU Bot</h1>
+            <form action="/logout" method="post">
+                @csrf
+                <button class="btn btn-danger">Logout</button>
+            </form>
         </div>
 
     </div>
@@ -47,7 +51,8 @@
 
 
     <div class="px-5 py-5 flex justify-content-center fixed-bottom">
-        <form class="prompt px-3 mx-5">
+        <form class="prompt px-3 mx-5" method="POST" action="/chat">
+            @csrf
             <input type="text" placeholder="Message HukumKU Bot" class="bg-transparent border-0 text-black w-100">
             <button type="submit" class="bg-transparent border-0 prompt-button">
                 <img src={{ asset('assets/arrow-right.png') }} alt="" style="width: 100%; height: 100%;">

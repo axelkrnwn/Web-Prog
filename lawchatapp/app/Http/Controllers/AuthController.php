@@ -36,7 +36,7 @@ class AuthController extends Controller
         ]);
 
         Auth::login($user);
-        return redirect()->route('home')->with('success', 'Registration successful');
+        return redirect()->route('chat.index')->with('success', 'Registration successful');
     }
 
     public function showLoginForm()
@@ -52,7 +52,7 @@ class AuthController extends Controller
         ]);
 
         if (Auth::attempt(['email' => $request->email, 'password' => $request->password])) {
-            return redirect()->route('home')->with('success', 'Logged in successfully');
+            return redirect()->route('chat.index')->with('success', 'Logged in successfully');
         }
 
         return redirect()->back()->withErrors(['email' => 'Invalid credentials'])->withInput();
@@ -61,6 +61,6 @@ class AuthController extends Controller
     public function logout()
     {
         Auth::logout();
-        return redirect()->route('login')->with('success', 'Logged out successfully');
+        return redirect()->route('home')->with('success', 'Logged out successfully');
     }
 }
