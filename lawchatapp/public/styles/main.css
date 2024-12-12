@@ -77,3 +77,7 @@ input:focus{
         display: none;
     }
 }
+
+::-webkit-scrollbar{
+    display: none;
+}

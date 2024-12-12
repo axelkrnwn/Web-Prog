@@ -8,12 +8,11 @@
     <link rel="stylesheet" href={{ asset('styles/landing.css') }}>
 </head>
 <body>
-<header class="header">
+    <header class="header">
         <div class="logo">
             <img src={{ asset('assets/logo.png') }} alt="HukumKU Bot Logo" style="width: 50px; height:60px">
             <h2>HukumKU Bot</h2>
         </div>
-
         <div class="nav-buttons">
             <a href="/login" class="button">Login</a>
             <a href="/register" class="button">SignUp</a>
