@@ -104,7 +104,7 @@ Feel free to explore the different features of the app by logging in and using t
 ### 3. Bryan Jo
 - **Github**: [Bryan Jo's Github](https://github.com/brynnjoo)
 
-### 4. Eugene Emanuel Harvene
-- **Github**: [Eugene's Github](https://linkedin.com/in/alicebrown)
+### 4. Eugene Emmanuelle Hervine
+- **Github**: [Eugene's Github](https://github.com/EugeneHervine)
 
 
