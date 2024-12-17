@@ -22,15 +22,17 @@ An AI-based chatbot that provides information related to Indonesia's UU ITE Law.
    ```bash
    cd lawchatapp
 
-3. Install Python dependencies:
-   ```bash
-   git clone https://github.com/axelkrnwn/Web-Prog.git
-
-4. Install Laravel dependencies:
+3. Install Laravel dependencies:
    ```bash
    composer install
 
----
+4. Back to root and locate model file
+   ```bash
+   cd ../model
+
+5. Install Python dependencies:
+   ```bash
+   pip install -r requirements.txt
 
 ## Usage
 
