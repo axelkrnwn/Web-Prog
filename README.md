@@ -8,7 +8,7 @@ HukumBot helps users understand their rights and responsibilities under the law,
 - Provides legal summaries using Retrieval-Augmented Generation (RAG).
 - Web interface built with Laravel and MySql as the database.
 
-## How RAG Works
+## What is RAG?
 **Retrieval-Augmented Generation (RAG)** is a method that enhances the chatbot’s ability to provide accurate and context-aware responses. It combines information retrieval and text generation to deliver high-quality, relevant answers.
 
 ![RAG Diagram](https://github.com/user-attachments/assets/1d83e588-ae85-4a13-9abe-c25483bc5154)  
@@ -101,8 +101,6 @@ To try the application live, visit:
 Feel free to explore the different features of the app by logging in and using the chat functionalities.
 
 ## Database Schema
-
-Here is the **Entity-Relationship Diagram (ERD)** for the application's database schema:
 
 ![erds](https://github.com/user-attachments/assets/d3f67bf7-a1e9-40b2-8e10-d68990bbe60b)
 
