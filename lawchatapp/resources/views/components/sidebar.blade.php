@@ -12,10 +12,17 @@
     <div style="display: flex; flex-direction: column; row-gap: 2%;">
         @isset($history)
             @foreach ($history as $hist)
+            <div style="display: flex; justify-content: space-between; align-items: center">
+                <a style="width: 70%;" href={{"/chat/".$hist->id}}>
+                    {{strlen($hist->chat[0]->content) > 30? substr($hist->chat[0]->content,0,27)."..." :$hist->chat[0]->content}}
+                </a>
+                <form action={{"/chat/".$hist->id}} method="POST">
+                    @method('delete')
+                    @csrf
+                    <button type="submit" class="btn btn-danger">Del</button>
+                </form>
+            </div>
 
-            <a href={{"/chat/".$hist->id}}>
-                {{$hist->chat[0]->content}}
-            </a>
             @endforeach
 
         @endisset

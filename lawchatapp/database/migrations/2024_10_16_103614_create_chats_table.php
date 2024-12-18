@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('chats', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('chat_room_id');
-            $table->foreign('chat_room_id')->references('id')->on('chat_rooms');
+            $table->foreign('chat_room_id')->references('id')->on('chat_rooms')->onDelete('cascade');
             $table->string('content', 10000);
             $table->integer("is_generated");
             $table->timestamps();

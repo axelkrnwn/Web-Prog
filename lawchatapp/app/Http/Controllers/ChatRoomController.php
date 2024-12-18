@@ -20,4 +20,9 @@ class ChatRoomController extends Controller
         return view('home.chatroom', compact('id'));
     }
 
+    public function delete($id){
+        ChatRoom::destroy($id);
+        return redirect()->route('chat.index');
+    }
+
 }
