@@ -12,6 +12,7 @@
 }
 
 .menu-button{
+    margin-left: 10px;
     display: flex;
     flex-direction: column;
     row-gap: 8px;
@@ -20,7 +21,7 @@
 
 .rectangle{
     height: 4px;
-    border: 2px solid #6C4F4F;
+    border: 3px solid #6C4F4F;
     width: 40px;
     border-radius: 2px;
 }
@@ -85,6 +86,7 @@ input:focus{
 }
 
 .logout-btn img {
+    margin-right: 10px;
     width: 50px;  
     height: auto; 
     transition: filter 0.3s ease-in-out;
