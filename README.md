@@ -99,7 +99,7 @@ Once logged in, users can interact with the chatbot to get information about the
 ### 4. **Live Demo**
 
 To try the application live, visit:  
-[Live Application](http://example)
+[Live Application](https://lawchat-temp-git-main-imekonets-projects.vercel.app/)
 
 ---
 
