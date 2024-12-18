@@ -1,0 +1,83 @@
+.logo-container{
+    object-fit: cover;
+    height: 70px;
+    width: 50px;
+    border: 1px solid red;
+}
+
+::placeholder{
+    color: white;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.menu-button{
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    cursor: pointer;
+}
+
+.rectangle{
+    height: 4px;
+    border: 2px solid #CBB9B9;
+    width: 40px;
+    border-radius: 2px;
+}
+
+.title{
+    color: #CBB9B9;
+    font-weight: 400;
+}
+
+.user-chat, .bot-chat{
+    background-color: #CBB9B9;
+    width: 45%;
+    color: white;
+}
+
+.user-chat{
+    border-radius: 15px 0 15px 15px;
+}
+
+.bot-chat{
+    border-radius: 15px 15px 15px 0;
+}
+
+.prompt{
+    background-color: #CBB9B9;
+    border-radius: 5px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.prompt-button{
+    cursor: pointer;
+    height: 80%;
+    width: auto;
+    object-fit: cover;
+}
+
+
+input:focus{
+    outline: none;
+}
+
+@media screen and (max-width: 768px) {
+
+    .title{
+        display: none;
+    }
+
+    ::placeholder{
+        opacity: 0;
+        display: none;
+    }
+}
+
+::-webkit-scrollbar{
+    display: none;
+}

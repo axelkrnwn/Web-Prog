@@ -2,12 +2,19 @@
     "version": 2,
       "framework": null,
     "functions": {
-        "api/index.php": { "runtime": "vercel-php@0.6.0" }
+        "api/index.php": { "runtime": "vercel-php@0.6.1" }
     },
     "routes": [{
+        "src": "styles/landing.css",
+        "dest": "/public/styles/landing.css"
+    },{
+        "src": "assets/(.*)",
+        "dest": "public/assets/"
+    }, {
         "src": "/(.*)",
         "dest": "/api/index.php"
-    }],
+    }
+    ],
     "env": {
         "APP_ENV": "production",
         "APP_DEBUG": "true",

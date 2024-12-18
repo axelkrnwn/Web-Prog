@@ -62,9 +62,6 @@
                 <a href="{{ route('google.login') }}" class="social-btn google-btn">
                     <img src="{{ asset('assets/google.png') }}" alt="Google Icon"> Continue with Google
                 </a>
-                <a href="{{ route('facebook.login') }}" class="social-btn facebook-btn">
-                    <img src="{{ asset('assets/facebook.png') }}" alt="Facebook Icon"> Continue with Facebook
-                </a>
             </div>
         </form>
     </div>

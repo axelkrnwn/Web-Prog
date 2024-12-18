@@ -10,11 +10,14 @@
     </div>
     <h4 style="color: white">Recent Chats</h4>
     <div style="display: flex; flex-direction: column; row-gap: 2%;">
-        @foreach ($history as $hist)
+        @isset($history)
+            @foreach ($history as $hist)
 
-        <a href={{"/chat/".$hist->id}}>
-            {{$hist->chat[0]->content}}
-        </a>
-        @endforeach
+            <a href={{"/chat/".$hist->id}}>
+                {{$hist->chat[0]->content}}
+            </a>
+            @endforeach
+
+        @endisset
     </div>
 </div>
