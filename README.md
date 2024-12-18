@@ -1,16 +1,23 @@
 # HukumBot
-An AI-based chatbot that provides information related to Indonesia's UU ITE Law.
+An AI-based chatbot that provides information related to Indonesia's UU ITE Law.  
+Designed to contribute to **SDG 16: Peace, Justice, and Strong Institutions** by promoting access to legal information and supporting the rule of law in Indonesia.  
+HukumBot helps users understand their rights and responsibilities under the law, ensuring transparency, reducing legal barriers, and fostering justice through accessible legal information. By providing easy access to legal knowledge, it supports stronger institutions and promotes peace through informed decision-making.
 
 ## Key Features
 - Answers questions related to UU ITE law.
 - Provides legal summaries using Retrieval-Augmented Generation (RAG).
 - Web interface built with Laravel and MySql as the database.
 
+## How RAG Works
+**Retrieval-Augmented Generation (RAG)** is a method that enhances the chatbot’s ability to provide accurate and context-aware responses. It combines information retrieval and text generation to deliver high-quality, relevant answers.
+
+![RAG Diagram](https://github.com/user-attachments/assets/1d83e588-ae85-4a13-9abe-c25483bc5154)  
+*Image Source: [CodingScape](https://codingscape.com/blog/rag-101-what-is-rag-and-why-does-it-matter)*
+
 ## Requirements
   - Python 3.8 or higher
   - Laravel 11.x
   - Node 21.7.1 or higher
-
 
 ## Installation
 
@@ -93,18 +100,33 @@ To try the application live, visit:
 
 Feel free to explore the different features of the app by logging in and using the chat functionalities.
 
+## Database Schema
+
+Here is the **Entity-Relationship Diagram (ERD)** for the application's database schema:
+
+![erds](https://github.com/user-attachments/assets/d3f67bf7-a1e9-40b2-8e10-d68990bbe60b)
+
+Explanation:
+- **User**: Stores user information such as login credentials.
+- **Chatroom**: Stores chat logs, representing individual chat sessions or histories.
+- **Chat**: Contains the individual messages within each **Chatroom**, including the legal summaries and information provided by the chatbot.
+
 ## Contact
 
-### 1. Frederick Chandra  
-- **Github**: [Frederick Chandra's Github](https://github.com/frederick542)
+### 1. Frederick Chandra
+- **Github**: [Frederick Chandra's Github](https://github.com/frederick542)  
+  *Frederick works on AI and design.*
 
-### 2. Axel Kurniawan  
-- **Github**: [Axel Kurniawan's Github](https://github.com/axelkrnwn)
+### 2. Axel Kurniawan
+- **Github**: [Axel Kurniawan's Github](https://github.com/axelkrnwn)  
+  *Axel works on the chat page.*
 
 ### 3. Bryan Jo
-- **Github**: [Bryan Jo's Github](https://github.com/brynnjoo)
+- **Github**: [Bryan Jo's Github](https://github.com/brynnjoo)  
+  *Bryan handles authorization, including login and register.*
 
 ### 4. Eugene Emmanuelle Hervine
-- **Github**: [Eugene's Github](https://github.com/EugeneHervine)
+- **Github**: [Eugene's Github](https://github.com/EugeneHervine)  
+  *Eugene works on design and the landing page.*
 
 
