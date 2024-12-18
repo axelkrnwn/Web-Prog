@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Landing page</title>
-    <link rel="stylesheet" href={{ asset('styles/landing.css') }}>
+    <link rel="icon" href="{{ asset('assets/web_icon.png') }}" type="image/png">
+    <link rel="stylesheet" href="{{ asset('styles/landing.css') }}">
 </head>
 <body>
     <header class="header">
         <div class="logo">
-            <img src={{ asset('assets/logo.png') }} alt="HukumKU Bot Logo" style="width: 50px; height:60px">
+        <img src="{{ asset('assets/logo.png') }}" alt="HukumKU Bot Logo" style="width: auto; height: 50px; max-width: 100%;">
             <h2>HukumKU Bot</h2>
         </div>
         <div class="nav-buttons">
@@ -25,9 +26,9 @@
         <h1>INTRODUCING HUKUMKU BOT</h1>
 
         <div class="content">
-            <p>We've trained a model called HukumkuBot which interacts in a conversational way. The dialogue format makes it possible for HukumkuBot to answer follow-up questions, admit its mistakes, challenge incorrect premises, and reject inappropriate requests.</p>
-            <p>HukumkuBot is a sibling model to InstructGPT, which is trained to follow an instruction in a prompt and provide a detailed response.</p>
-            <p>We are excited to introduce HukumkuBot to get users' feedback and learn about its strengths and weaknesses. During the research preview, usage of HukumkuBot is free. Try it now at HukumkuBot.com</p>
+            <p>Perkenalkan <strong>HukumkuBot</strong> – model AI yang dirancang untuk berinteraksi dengan pengguna secara percakapan. HukumkuBot dapat menjawab pertanyaan lanjutan, mengakui kesalahan, menantang premis yang salah, dan menolak permintaan yang tidak pantas, menciptakan pengalaman yang interaktif dan informatif.</p>
+            <p>Sebagai model saudara dari InstructGPT, HukumkuBot dilatih untuk mengikuti instruksi dalam sebuah prompt dan memberikan respons yang terperinci. Kemampuannya dalam menangani percakapan memungkinkan pertukaran informasi yang dinamis tentang topik hukum.</p>
+            <p>Kami sangat antusias memperkenalkan HukumkuBot dan mengundang Anda untuk memberikan masukan yang berharga untuk membantu kami meningkatkan kemampuannya. Selama masa pratinjau riset ini, Anda bisa menggunakan HukumkuBot sepenuhnya gratis. Coba sekarang di <a href="https://HukumkuBot.com" target="_blank">HukumkuBot.com</a> dan rasakan pengalaman AI hukum yang inovatif.</p>
         </div>
     </main>
 

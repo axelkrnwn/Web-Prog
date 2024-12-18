@@ -5,12 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Chat room page</title>
+    <link rel="icon" href="{{ asset('assets/web_icon.png') }}" type="image/png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href={{ asset('styles/main.css') }}>
+    <link rel="stylesheet" href="{{ asset('styles/main.css') }}">
 </head>
+<<<<<<< Updated upstream
 <body style="background-color: #f5f5f5; height: 100vh; display: flex; widows: 100vw;">
     <div id = "sidebar" style="display: none; width: 30%; background-color: #CBB9B9; height: 100vh;">
         <x-sidebar></x-sidebar>
+=======
+<body style="background-color: #f5f5f5">
+    <div class="p-2">
+    <div class="d-flex my-2 flex-col align-items-center justify-content-between w-100">
+        <div class="menu-button">
+            <div class="rectangle"><span></span></div>
+            <div class="rectangle"><span></span></div>
+            <div class="rectangle"><span></span></div>
+        </div>
+        <h1 class="title">HukumKU Bot</h1>
+        <form action="/logout" method="post" class="ms-auto">
+            @csrf
+            <button type="submit" class="logout-btn">
+                <img src="{{ asset('assets/logout_icon.png') }}" alt="Logout">
+            </button>
+        </form>
+>>>>>>> Stashed changes
     </div>
     <div class="pb-2" style="width: 100%">
         <div class="p-2">
@@ -47,6 +66,7 @@
                 @endisset
             </div>
 
+<<<<<<< Updated upstream
 
             <div class="px-5 flex justify-content-center absolute-bottom">
                 <form class="prompt px-3 mx-5" method="POST" action="/chat/{{$id}}">
@@ -58,8 +78,18 @@
                 </form>
             </div>
         </div>
+=======
+    <div class="px-5 py-5 flex justify-content-center fixed-bottom">
+        <form class="prompt px-3 mx-5" method="POST" action="/chat">
+            @csrf
+            <input type="text" placeholder="Message HukumKU Bot" class="bg-transparent border-0 text-black w-100">
+            <button type="submit" class="bg-transparent border-0 prompt-button">
+                <img src="{{ asset('assets/arrow-right.png') }}" alt="" style="width: 90%; height: 100%;">
+            </button>
+        </form>
+>>>>>>> Stashed changes
     </div>
-
+    
 </body>
 <script>
     document.getElementById('menu-button').addEventListener('click', () => {
