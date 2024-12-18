@@ -115,18 +115,18 @@ Explanation:
 
 ### 1. Frederick Chandra
 - **Github**: [Frederick Chandra's Github](https://github.com/frederick542)  
-  *Frederick works on AI and design.*
+  *Frederick contributed to **AI development** and assisted with the **design** of the application.*
 
 ### 2. Axel Kurniawan
 - **Github**: [Axel Kurniawan's Github](https://github.com/axelkrnwn)  
-  *Axel works on the chat page.*
+  *Axel was responsible for developing the **chat interface** and implementing its core **functionality**.*
 
 ### 3. Bryan Jo
 - **Github**: [Bryan Jo's Github](https://github.com/brynnjoo)  
-  *Bryan handles authorization, including login and register.*
+  *Bryan handled the implementation of **user authentication**, including the **login** and **registration** features.*
 
 ### 4. Eugene Emmanuelle Hervine
 - **Github**: [Eugene's Github](https://github.com/EugeneHervine)  
-  *Eugene works on design and the landing page.*
+  *Eugene was responsible for the **overall design** of the application, including the **UI/UX** and user-facing interface.*
 
 
