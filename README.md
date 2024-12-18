@@ -77,19 +77,24 @@ Navigate to the `lawchatapp` directory and follow these steps:
 
 The home page introduces the application and allows users to navigate to the login/register page.
 
-![Home Page Screenshot](path/to/homepage-screenshot.png)
+![image](https://github.com/user-attachments/assets/ff2332f3-811e-49ee-9e32-806ab326cb3f)
 
-### 2. **Login / Register Page**
+### 2. **Login and Register Page**
 
 Users can log in or register to access the chatbot functionalities.
 
-![Login/Register Screenshot](path/to/login-register-screenshot.png)
+## Login Page
+![image](https://github.com/user-attachments/assets/b3235798-ae1b-43d5-9af7-a53987faef28)
+
+## Register Page
+![image](https://github.com/user-attachments/assets/f4f626fc-068d-4940-8703-4b4b94310852)
 
 ### 3. **Chatting Interface**
 
 Once logged in, users can interact with the chatbot to get information about the law.
 
-![Chatting Interface Screenshot](path/to/chatting-screenshot.png)
+![image](https://github.com/user-attachments/assets/1752e721-136c-48c5-97d9-5005bce4c2d1)
+
 
 ### 4. **Live Demo**
 
