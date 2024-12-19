@@ -6,6 +6,7 @@ use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Blade;
 use App\View\Components\TextInput;
 use App\View\Components\AuthSessionStatus;
+use Illuminate\Support\Facades\URL;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -14,7 +15,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        //
+       if (env('APP_ENV') !== 'local') {
+            URL::forceScheme('https');
+        }
     }
 
     /**

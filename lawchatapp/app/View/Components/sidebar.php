@@ -23,9 +23,9 @@ class sidebar extends Component
      */
     public function render(): View|Closure|string
     {
-
+        // dd(Auth::user()->id);
         $history = ChatRoom::where('user_id','=',Auth::user()->id)->orderBy('created_at','DESC')->get();
-        // dd($history);
+        // dd($history);    
         return view('components.sidebar',compact('history'));
     }
 }

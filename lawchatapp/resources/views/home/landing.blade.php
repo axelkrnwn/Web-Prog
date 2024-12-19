@@ -28,7 +28,7 @@
         <div class="content">
             <p>Perkenalkan <strong>HukumkuBot</strong> – model AI yang dirancang untuk berinteraksi dengan pengguna secara percakapan. HukumkuBot dapat menjawab pertanyaan lanjutan, mengakui kesalahan, menantang premis yang salah, dan menolak permintaan yang tidak pantas, menciptakan pengalaman yang interaktif dan informatif.</p>
             <p>Sebagai model saudara dari InstructGPT, HukumkuBot dilatih untuk mengikuti instruksi dalam sebuah prompt dan memberikan respons yang terperinci. Kemampuannya dalam menangani percakapan memungkinkan pertukaran informasi yang dinamis tentang topik hukum.</p>
-            <p>Kami sangat antusias memperkenalkan HukumkuBot dan mengundang Anda untuk memberikan masukan yang berharga untuk membantu kami meningkatkan kemampuannya. Selama masa pratinjau riset ini, Anda bisa menggunakan HukumkuBot sepenuhnya gratis. Coba sekarang di <a href="https://HukumkuBot.com" target="_blank">HukumkuBot.com</a> dan rasakan pengalaman AI hukum yang inovatif.</p>
+            <p>Kami sangat antusias memperkenalkan HukumkuBot dan mengundang Anda untuk memberikan masukan yang berharga untuk membantu kami meningkatkan kemampuannya. Selama masa pengembangan ini, Anda bisa menggunakan HukumkuBot sepenuhnya gratis.</p>
         </div>
     </main>
 
